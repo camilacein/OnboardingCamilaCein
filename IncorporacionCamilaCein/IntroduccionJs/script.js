@@ -18,6 +18,7 @@ console.log(edadMascota)
 let nombreCompleto = miNombre+miApellido
 //*ejercicio8
 let textoPresentacion = "Hola soy" + miNombre + miApellido + "tengo" + miEdad + "años, mi mascota se llama" + miMascota + "y tiene" + edadMascota + "años"
+console.log (textoPresentacion)
 //*ejercicio9
 let sumaEdades = (miEdad+edadMascota)
 let restaEdades = (miEdad-edadMascota)
@@ -97,21 +98,35 @@ let textoAleatorio = (familia[4])+" se escapo de casa, llego a una verduleria y 
 let edad1 = prompt ("ingrese aqui su edad")
 let edad2 = prompt ("ingrese aqui su edad")
 
-let edadesIguales = edad1==edad2
-console.log ("Mi edad es igual a la de mi compañera" +edadesIguales) 
+let edadesIguales = edad1==edad2 
+if (edad1==edad2){
+    alert ("Mi edad es igual a la de mi compañera")
+}
+
 let soyMayor = edad1>edad2
-console.log ("Mi edad es mayor a la de mi compañera"+soyMayor)
+
+if (soyMayor){ 
+    alert ("Mi edad es mayor a la de mi compañera")
+}
 let soyMenor = edad1<edad2
-console.log ("Mi edad es menor a la de mi compañera"+soyMenor)
+if (soyMenor) { 
+alert ("Mi edad es menor a la de mi compañera") 
+}
 //*ejercicio18
 let edadAlSubir = prompt("ingrese aqui su edad")
 let altura = prompt ("Ingrese aqui su altura")
+
 let puedeSubir = (edadAlSubir>6, altura =>120)
-console.log ("Puede subir a la atraccion "+puedeSubir)
+if (puedeSubir){
+    alert ("Puede subir a la atraccion ")
+}
+ 
 let noPuedeSubir = (edadAlSubir<=6, altura<120)
-console.log ("No puede subirse a la atraccion "+noPuedeSubir)
+if (noPuedeSubir) {
+    alert("No puede subirse a la atraccion ")
+}
 //*ejercicio19
 let pase = prompt ("introduzca aqui su pase")
 pase === "vip","normal","limitado"
 let saldo = prompt ("introduzca aqui su saldo")
-saldo <= 5000
+saldo= (<0) &&  saldo <=5000) 
