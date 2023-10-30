@@ -115,18 +115,17 @@ alert ("Mi edad es menor a la de mi compañera")
 //*ejercicio18
 let edadAlSubir = prompt("ingrese aqui su edad")
 let altura = prompt ("Ingrese aqui su altura")
-
-let puedeSubir = (edadAlSubir>6, altura =>120)
-if (puedeSubir){
+ 
+if ((edadAlSubir>6 && altura >=120)){
     alert ("Puede subir a la atraccion ")
 }
- 
-let noPuedeSubir = (edadAlSubir<=6, altura<120)
-if (noPuedeSubir) {
+
+else {
     alert("No puede subirse a la atraccion ")
 }
 //*ejercicio19
-let pase = prompt ("introduzca aqui su pase")
-pase === "vip","normal","limitado"
-let saldo = prompt ("introduzca aqui su saldo")
-saldo= (<0) &&  saldo <=5000) 
+let pase= prompt( `tiene pase vip, normal o limitado?`)
+let saldo= Number(prompt(`ingrese su saldo de 0 a 5000`))
+let requisito= (saldo >= 1000 || pase== "vip" )
+alert(`puede pasar: ${requisito}`)
+
