@@ -91,12 +91,12 @@ function impuesto(ingresoAnual){
       console.log(`El impuesto a pagar es el 10% de su ingreso, ${porcentaje}`)
    }
    else if(ingresoAnual>10000&&ingresoAnual<20000){
-      let porcentaje= (ingresoAnual*15/100)
-      console.log(`El impuesto a pagar es el 15% de su ingreso, ${porcentaje}`)
+      let porcentaje1= (ingresoAnual*15/100)
+      console.log(`El impuesto a pagar es el 15% de su ingreso, ${porcentaje1}`)
    }
    else{
-      let porcentaje= (ingresoAnual*20/100)
-      console.log(`El impuesto a pgar es el 20% de su ingreso, ${porcentaje}`)
+      let porcentaje2= (ingresoAnual*20/100)
+      console.log(`El impuesto a pgar es el 20% de su ingreso, ${porcentaje2}`)
    }
 
 }
@@ -108,23 +108,18 @@ impuesto (20000)
 function verificarDia (dia){
    switch(dia){
       case 1:
-         console.log("Es un dia laboral")
-         break;
+        
       case 2:
-       console.log("Es un dia laboral")
-         break;
+       
       case 3:
-       console.log("Es un dia laboral")
-        break;
+      
       case 4:
-         console.log("Es un dia laboral")
-         break;
+       
       case 5:
             console.log("Es un dia laboral")
        break;
       case 6:
-         console.log("Es fin de semana")
-         break;
+        
       case 7:
          console.log("Es fin de semana")
          break;

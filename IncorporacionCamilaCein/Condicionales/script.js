@@ -144,7 +144,7 @@ else {
     alert("¿En realidad tiene esa edad?")
 }
 //ejercicio12
-let numeros1 = number(prompt("Ingrese un numero del 1 al 3"))
+let numeros1 = Number(prompt("Ingrese un numero del 1 al 3"))
 
 if (numeros1>=1&&numeros<=3){
     alert(`El numero ingresado es ${numeros1}`)
@@ -154,7 +154,7 @@ if (numeros1>=1&&numeros<=3){
 else{
     alert("Ese valor no esta permitido")
 }
-let numeros2 = number(prompt("Ingrese un numero que desee"))
+let numeros2 = Number(prompt("Ingrese un numero que desee"))
 if(numeros2){
     alert(`El numero ingresado es ${numeros2}`)
     alert(`El doble ingresado es ${numeros2*2}`)
@@ -184,7 +184,7 @@ else if (entrada=="si"){
 else if(ingresarNombre&&ingresarPase&&entrada){
     let comprar = prompt("Desea comprar?")
     if (comprar=="si") {
-        let dinero = number(prompt("ingresar dinero disponible"))
+        let dinero = Number(prompt("ingresar dinero disponible"))
     }
     else if (dinero<1000){
         alert("Venta exitosa, bienvenido")
